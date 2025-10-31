@@ -1,0 +1,214 @@
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.dashboard-container {
+  margin-left: 260px; /* Espacio del menú lateral */
+  padding: 40px 48px;
+  background-color: #0f172a; /* Fondo del panel */
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* ======== TÍTULOS ======== */
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f8fafc; /* Blanco principal */
+  margin-bottom: 6px;
+}
+
+.dashboard-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #94a3b8; /* Gris azulado más claro, igual a la imagen */
+  margin-bottom: 28px;
+}
+
+/* ======== CONTENEDOR DE TARJETAS ======== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ======== TARJETAS ======== */
+.card {
+  background-color: #1e293b; /* Fondo de las tarjetas */
+  border-radius: 10px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  background-color: #27354b; /* Hover sutil */
+  transform: translateY(-3px);
+}
+
+/* ======== TEXTO DE LAS TARJETAS ======== */
+.card-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8; /* Gris claro exacto de la imagen */
+  margin-bottom: 8px;
+}
+
+.card-number {
+  font-size: 32px;
+  font-weight: 600;
+  color: #f8fafc; /* Blanco puro */
+  margin: 0;
+}
+
+/* ======== SECCIÓN INFERIOR ======== */
+.bottom-section {
+  position: relative;
+  left: -6%;
+  margin-left: 10px;
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Notificaciones más ancha */
+  gap: 24px;
+  background-color: #0f172a;
+  font-family: "Inter", sans-serif;
+  width: 110%;
+}
+
+/* ======== TARJETA: NOTIFICACIONES ======== */
+.card-notifications {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 28px 32px;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título principal */
+.notifications-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 20px;
+}
+
+/* Cada notificación */
+.notification-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #334155; /* línea separadora */
+}
+
+.notification-item:last-of-type {
+  border-bottom: none;
+}
+
+/* Subtítulo de notificación */
+.notification-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+}
+
+/* Texto descriptivo */
+.notification-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #94a3b8; /* Gris azulado igual al diseño */
+  margin: 0;
+}
+
+/* Enlace inferior */
+.view-all {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+/* ======== TARJETA: ACCESOS DIRECTOS ======== */
+.card-shortcuts {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 28px 32px;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título */
+.shortcuts-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de botones */
+.shortcuts-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Botón principal (morado) */
+.btn-primary {
+  background-color: #4f46e5;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6366f1;
+}
+
+/* Botones secundarios (grises) */
+.btn-secondary {
+  background-color: #334155;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #475569;
+  color: #f8fafc;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 1024px) {
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
