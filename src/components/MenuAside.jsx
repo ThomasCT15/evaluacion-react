@@ -1,6 +1,5 @@
 import './MenuAside.css'
 import { Link } from 'react-router-dom'
-import iconN from '../assets/icon-N.png'
 
 function MenuAside (){
     return(

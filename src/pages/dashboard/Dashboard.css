@@ -12,3 +12,56 @@
 .body-dashboard{
    background-color: #0F172A;
 }
+
+/* ======== HEADER SUPERIOR ======== */
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 260px; /* espacio del menú lateral */
+  right: 0;
+  height: 64px;
+  background-color: #0F172A; /* igual al fondo del dashboard */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  box-sizing: border-box;
+  z-index: 1000;
+  border-bottom: 1px solid #1E293B; /* línea sutil de separación */
+}
+
+/* Texto de bienvenida */
+.header-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F8FAFC; /* blanco suave */
+  margin: 0;
+}
+
+/* Contenedor derecho (avatar + punto) */
+.header-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Avatar redondo */
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1E293B; /* borde suave */
+}
+
+/* Punto de notificación azul */
+.notification-dot {
+  position: absolute;
+  top: 8px;
+  right: 38px;
+  width: 6px;
+  height: 6px;
+  background-color: #3B82F6; /* azul brillante */
+  border-radius: 50%;
+}
