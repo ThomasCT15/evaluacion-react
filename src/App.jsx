@@ -4,7 +4,9 @@ import { RouterApp } from './routes/RouterApp'
 
 
 function App() {
-  return 
+  return (
+    <RouterProvider router={createBrowserRouter(RouterApp)} />
+  )
 }
 
 export default App

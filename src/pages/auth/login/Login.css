@@ -1,0 +1,130 @@
+.login-page {
+  background-color: #0f172a; /* Fondo oscuro completo */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ----- CONTENEDOR DEL FORMULARIO ----- */
+.login-container {
+  background-color: #1e293b; /* Azul gris oscuro */
+  padding: 45px 55px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #e2e8f0;
+  animation: fadeIn 0.4s ease;
+}
+
+/* ----- ANIMACIÓN ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- TÍTULOS ----- */
+h1 {
+  color: #f8fafc;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.95em;
+  margin-bottom: 25px;
+}
+
+/* ----- FORMULARIO ----- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ----- LABELS ----- */
+label {
+  font-size: 0.9em;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+/* ----- INPUTS ----- */
+input {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95em;
+  margin-bottom: 18px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #2563eb;
+  box-shadow: 0 0 6px #2563eb44;
+}
+
+/* ----- CONTRASEÑA ----- */
+.password-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.forgot-password {
+  font-size: 0.85em;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ----- BOTÓN ----- */
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ----- REGISTRO ----- */
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+
+.register-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
