@@ -8,21 +8,17 @@ function Login() {
       <p className="subtitle">Bienvenido de nuevo. Accede a tu cuenta.</p>
       <div className="login-container">
         <form className="login-form">
-          <label htmlFor="email">Email o Nombre de Usuario</label>
-          <input type="text" id="email" placeholder="tu@ejemplo.com" required />
+          <label htmlFor="email" className="login-label">Email o Nombre de Usuario</label>
+          <input className="login-input" type="text" id="email" placeholder="tu@ejemplo.com" required />
 
           <div className="password-section">
-            <label htmlFor="password">Contraseña</label>
+            <label htmlFor="password" className="login-label">Contraseña</label>
             <Link href="#" className="forgot-password">
               ¿Olvidaste tu contraseña?
             </Link>
           </div>
 
-          <input
-            type="password"
-            id="password"
-            placeholder="********"
-            required
+          <input className="login-input" type="password" id="password" placeholder="********" required
           />
 
           <button type="submit">Iniciar Sesión</button>

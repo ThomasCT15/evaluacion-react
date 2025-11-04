@@ -5,20 +5,21 @@
   background-color: #0f172a; /* Fondo del panel */
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+  margin-top: 20px;
 }
 
-/* ======== TÍTULOS ======== */
+/* ======== TÍTULO ======== */
 .dashboard-title {
   font-size: 22px;
   font-weight: 700;
-  color: #f8fafc; /* Blanco principal */
+  color: #f8fafc; 
   margin-bottom: 6px;
 }
 
 .dashboard-subtitle {
   font-size: 14px;
   font-weight: 400;
-  color: #94a3b8; /* Gris azulado más claro, igual a la imagen */
+  color: #94a3b8; 
   margin-bottom: 28px;
 }
 
@@ -31,7 +32,7 @@
 
 /* ======== TARJETAS ======== */
 .card {
-  background-color: #1e293b; /* Fondo de las tarjetas */
+  background-color: #1e293b; 
   border-radius: 10px;
   padding: 22px 20px;
   display: flex;
@@ -42,7 +43,6 @@
 }
 
 .card:hover {
-  background-color: #27354b; /* Hover sutil */
   transform: translateY(-3px);
 }
 
@@ -50,14 +50,14 @@
 .card-label {
   font-size: 14px;
   font-weight: 500;
-  color: #94a3b8; /* Gris claro exacto de la imagen */
+  color: #94a3b8; 
   margin-bottom: 8px;
 }
 
 .card-number {
   font-size: 32px;
   font-weight: 600;
-  color: #f8fafc; /* Blanco puro */
+  color: #f8fafc; 
   margin: 0;
 }
 
@@ -68,7 +68,7 @@
   margin-left: 10px;
   padding: 40px 48px;
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Notificaciones más ancha */
+  grid-template-columns: 2fr 1fr; 
   gap: 24px;
   background-color: #0f172a;
   font-family: "Inter", sans-serif;
@@ -86,7 +86,6 @@
   justify-content: space-between;
 }
 
-/* Título principal */
 .notifications-title {
   font-size: 16px;
   font-weight: 600;
@@ -94,7 +93,6 @@
   margin-bottom: 20px;
 }
 
-/* Cada notificación */
 .notification-item {
   padding: 14px 0;
   border-bottom: 1px solid #334155; /* línea separadora */
@@ -104,7 +102,6 @@
   border-bottom: none;
 }
 
-/* Subtítulo de notificación */
 .notification-title {
   font-size: 14px;
   font-weight: 500;
@@ -112,15 +109,13 @@
   margin: 0 0 4px 0;
 }
 
-/* Texto descriptivo */
 .notification-text {
   font-size: 13px;
   font-weight: 400;
-  color: #94a3b8; /* Gris azulado igual al diseño */
+  color: #94a3b8; 
   margin: 0;
 }
 
-/* Enlace inferior */
 .view-all {
   margin-top: 16px;
   font-size: 13px;
@@ -143,7 +138,6 @@
   flex-direction: column;
 }
 
-/* Título */
 .shortcuts-title {
   font-size: 16px;
   font-weight: 600;
@@ -151,14 +145,12 @@
   margin-bottom: 20px;
 }
 
-/* Contenedor de botones */
 .shortcuts-buttons {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Botón principal (morado) */
 .btn-primary {
   background-color: #4f46e5;
   color: #f8fafc;
@@ -175,7 +167,6 @@
   background-color: #6366f1;
 }
 
-/* Botones secundarios (grises) */
 .btn-secondary {
   background-color: #334155;
   color: #cbd5e1;
@@ -193,15 +184,15 @@
   color: #f8fafc;
 }
 
-/* ======== RESPONSIVE ======== */
-@media (max-width: 1024px) {
+/* ======== RESPONSIVE SECCIÓN INFERIOR ======== */
+/* @media (max-width: 1024px) {
   .bottom-section {
     grid-template-columns: 1fr;
   }
-}
+} */
 
-/* ======== RESPONSIVE ======== */
-@media (max-width: 1024px) {
+/* ======== RESPONSIVE CONTENEDOR DE TARJETAS ======== */
+/* @media (max-width: 1024px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -211,4 +202,4 @@
   .cards-container {
     grid-template-columns: 1fr;
   }
-}
+} */

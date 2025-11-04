@@ -1,5 +1,5 @@
 .login-page {
-  background-color: #0f172a; /* Fondo oscuro completo */
+  background-color: #0f172a; 
   height: 100vh;
   width: 100%;
   display: flex;
@@ -10,26 +10,14 @@
 
 /* ----- CONTENEDOR DEL FORMULARIO ----- */
 .login-container {
-  background-color: #1e293b; /* Azul gris oscuro */
-  padding: 45px 55px;
+  background-color: #1e293b; 
+  padding: 45px 50px;
   border-radius: 12px;
   width: 380px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   text-align: center;
   color: #e2e8f0;
   animation: fadeIn 0.4s ease;
-}
-
-/* ----- ANIMACIÓN ----- */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ----- TÍTULOS ----- */
@@ -53,27 +41,26 @@ h1 {
 }
 
 /* ----- LABELS ----- */
-label {
+.login-label {
   font-size: 0.9em;
-  color: #cbd5e1;
+  color: white;
   margin-bottom: 6px;
 }
 
 /* ----- INPUTS ----- */
-input {
+.login-input {
   background-color: #0f172a;
   border: 1px solid #334155;
-  color: #e2e8f0;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 15px;
   outline: none;
   font-size: 0.95em;
   margin-bottom: 18px;
   transition: all 0.3s ease;
 }
 
-input:focus {
-  border: 1px solid #2563eb;
+.login-input:focus {
+  border: 2px solid #2563eb;
   box-shadow: 0 0 6px #2563eb44;
 }
 
